@@ -1,0 +1,360 @@
+body {
+  background-color: #FCF7F7;
+  font-family: "Epilogue", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  flex-direction: column; 
+}
+
+
+header {
+  background-color: #FCF7F7;
+  border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+  height: 65px;
+  align-items: center;
+  font-family: "Epilogue", sans-serif;
+}
+
+nav a {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header-line {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-logo {
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s linear;
+  text-decoration: none;
+  color: black;
+}
+
+img:first-child {
+  height:30px;
+  width:40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s linear;
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color:rgb(255, 135, 70);
+}
+
+
+.nav-item {
+  font-size:14px;
+  color: black;
+  font-weight: 700;
+  margin-right: 25px;
+  transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+  color:rgb(255, 135, 70);
+}
+
+.nav-left {
+  align-items: start;
+}
+
+
+
+
+
+
+
+
+
+
+main {
+  background-color: #FCF7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block {
+  padding: 40px;
+  font-size: 25px;
+  width: fit-content;
+}
+
+.block-1 {
+  background-image: url("pizza-main-1.jpg");
+  margin-top: 30px;
+  height: 480px;
+  width: 1024px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.centered-heading {
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 200px;
+  font-size: 50px;
+}
+
+
+.subheading {
+  text-align: center;
+  color:#ffffff;
+  font-size: 16px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+
+.mbc {
+  text-align: center;
+}
+
+
+.red-button {
+  justify-content: center;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  align-items: center;
+  font-family: "Epilogue", sans-serif;
+  background-color: red;
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 22px;
+  margin-top: 44px;
+  transition: color 1s linear;
+  transition: background-color 0.3s linear;
+}
+
+.red-button:hover {
+  background-color:rgb(255, 135, 70);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block-2 {
+  width: 1024px;
+  height: 629px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.block-2 figure {
+  flex: 1 1 50%;
+  margin: 10px;
+}
+
+.why {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.answer {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.answer-green {
+  color: #009246;
+}
+
+.answer-white {
+  color: #a3a3a3;
+}
+
+.answer-red {
+  color: #CE2B37;
+}
+
+
+
+.two-images {
+  display: flex;
+}
+
+.two-images img {
+  width: 458px;
+  height: 341px;
+  border-radius: 12px;
+}
+
+.figcaption-block-2 p {
+  margin: 0px;
+}
+
+figure:first-child {
+  font-size: 18px;
+}
+
+figure:nth-child(2) {
+  font-size: 18px;
+}
+
+.figsecond {
+  color: #9C4F4A;
+  font-size: 16px;
+}
+
+
+
+
+.block-3 {
+  font-family: "Epilogue", sans-serif;
+  width: 1024px;
+  height: 800px;
+}
+
+
+.popular-pizzas {
+  font-size:36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.btf {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+.bts {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+
+.block-3 img {
+  width: 366px;
+  height: 366px;
+  border-radius: 12px;
+}
+
+.pp1 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.pp2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  height: 20px;
+}
+
+
+
+#svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #9C4F4A;
+}
+
+.footer-copyright {
+  margin-top: 5px;
+}
+
+
+
+/* @media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }  
+  .cell {
+      width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  figure {
+      width: 100%;
+  }
+} */
+
+/* nav {
+  text-align: right;
+  display: flex;
+  align-items: center;
+} */
+
+main video {
+  width: 100%;
+  height: auto;
+}

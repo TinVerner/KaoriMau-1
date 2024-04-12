@@ -1,0 +1,163 @@
+/* @media (max-width: 1200px) {
+    .block-2 {
+        width: 1200px;
+        height: 629px;
+    }
+}
+
+@media (max-width: 992px) {
+    .block-2 {
+        width: 992px;
+        height: 629px;
+    }
+}
+
+@media (max-width: 768px) {
+    .centered-heading {
+        text-align: center;
+        color: rgb(255, 0, 0);
+        margin-top: 200px;
+    }
+
+    .block-2 {
+        width: 768px;
+        height: 629px;
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-heading {
+        text-align: center;
+        color: rgb(255, 0, 0);
+        margin-top: 200px;
+    }
+
+    .block-2 {
+        width: 480px;
+        height: 629px;
+    }
+}
+*/
+
+
+/* @media (max-width: 320px) {
+    .block-2 {
+        width: 320px;
+    }
+}  */
+
+
+/* Стили для телефона */
+
+@media (max-width: 720px) {
+    /* Изменение стилей для контейнера */
+    .container {
+      padding: 0 10px;
+    }
+
+    .centered-heading {
+        font-size: 500px;
+    }
+
+    .subheading {
+
+    }
+
+    header {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    
+    .header-logo {
+        font-size: 16px;
+    }
+    
+    .block-1 {
+
+        padding-top: 0;
+        height: 300px;
+        width: 100%;
+    }
+    
+    .centered-heading {
+        margin-top: 100px;
+        font-size: 24px;
+    }
+    
+    .subheading {
+        font-size: 14px;
+    }
+    
+    .red-button {
+        font-size: 14px;
+        padding: 10px 18px;
+        margin-top: 30px;
+    }
+    
+    .block-2 img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .why {
+        font-size: 34px;
+    }
+    
+    .answer {
+        font-size: 18px;
+    }
+    
+    .two-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-first {
+        font-size: 30px;
+    }
+
+    .span-second {
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+
+    .block-3 {
+      width: 100%;
+      height: auto;
+    }
+
+    
+    
+
+    .block-3 img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .popular-pizzas {
+      font-size: 24px;
+    }
+    
+    .btf {
+      font-size: 24px;
+    }
+    
+    .bts {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    
+    footer {
+      height: 10px;
+    }
+  }
