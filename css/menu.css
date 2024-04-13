@@ -248,8 +248,8 @@ main {
 
 /* Стили для изображения пиццы */
 .pizza-image {
-  width: 200px;
-  height: 150px;
+  width: 176px;
+  height: 176px;
   cursor: pointer;
 }
 
@@ -260,24 +260,28 @@ main {
 
 
 .block-2 {
-  /* width: 1024px;
-  height: 629px; */
+  width: 1024px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 50px;
+  align-items: center;
+  
 }
 
 
 .menu-pizzas-text {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 40px;
   text-align: start;
+  margin-top: 30px;
 }
 
 
-.pizza-1 {
 
+
+.pizza-image {
+  margin: 0 13px;
 }
-
 
 
 
