@@ -194,8 +194,8 @@ main {
 
 
 
-.modal {
-  display: none; /* Скрытое модальное окно по умолчанию */
+/* .modal {
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -204,23 +204,27 @@ main {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0; /* Начальная прозрачность */
-  transition: opacity 0.3s; /* Плавное изменение прозрачности */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .modal-content {
+  display: flex;
   background-color: #fefefe;
   margin: 0 auto;
-  padding: 20px;
+  margin-top: 200px;
+  padding: 10px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 600px;
+  max-width: 5000px;
+  height: 500px;
   text-align: center;
-  transform: translateY(-100%); /* Начальное положение за пределами экрана сверху */
-  transition: transform 0.3s; /* Плавное изменение положения */
-}
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  border-radius: 20px;
+} */
 
-.close {
+/* .close {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -232,26 +236,22 @@ main {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 
-
+/* 
 .modal.show {
-  opacity: 1; /* Показываем модальное окно с плавным затуханием */
+  opacity: 1;
 }
 
 .modal.show .modal-content {
-  transform: translateY(0); /* Показываем модальное окно с плавным перемещением вниз */
-}
+  transform: translateY(0);
+} */
 
 
 
 /* Стили для изображения пиццы */
-.pizza-image {
-  width: 176px;
-  height: 176px;
-  cursor: pointer;
-}
+
 
 
 
@@ -264,32 +264,32 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin: 0 50px;
-  align-items: center;
-  
+  /* align-items: center; */
+  font-size: 16px;
+  font-weight: bold;
 }
 
+.block-2 figure {
+  margin: 15px 13px;
+}
+
+.block-2 img {
+  width: 176px;
+  height: 176px;
+  cursor: pointer;
+}
+
+.block-2 figcaption {
+  margin-left: 7px;
+}
 
 .menu-pizzas-text {
   font-weight: bold;
   font-size: 40px;
   text-align: start;
   margin-top: 30px;
+  margin-bottom: -15px;
 }
-
-
-
-
-.pizza-image {
-  margin: 0 13px;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -301,44 +301,99 @@ main {
 
 
 .block-3 {
-  font-family: "Epilogue", sans-serif;
   width: 1024px;
-  height: 800px;
-}
-
-
-.popular-pizzas {
-  font-size:36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
-.btf {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top:10px;
+.block-3 figure {
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.bts {
-  font-size: 18px;
-  margin-top: 30px;
+.block-3 figcaption {
+  margin-left: 22px;
 }
-
 
 .block-3 img {
-  width: 366px;
-  height: 366px;
+  width: 320px;
+  height: 270px;
   border-radius: 12px;
 }
 
-.pp1 {
+
+
+
+.block-4 {
   margin-top: 20px;
+  width: 1024px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.pp2 {
+
+.block-4 figure {
+  margin-bottom: 20px;
+  margin-right: 25px
+}
+
+
+.block-4 figcaption {
+  margin-left: 22px;
+}
+
+.block-4 img {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+
+.block-5 {
   margin-top: 20px;
+  width: 1024px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+
+}
+
+
+.block-5 figure {
+  margin-bottom: 30px;
+  margin-right: 25px;
+}
+
+
+.block-5 figcaption {
+  margin-left: 22px;
+}
+
+.block-5 figcaption:nth-child(2) {
+  font-weight: bold;
+}
+
+.block-5 figcaption:nth-child(3) {
+  font-weight: bold;
+}
+
+.block-5 figcaption:nth-child(4) {
+  color: #9C4F4A;
+  font-size: 14px;
+}
+
+.block-5 img {
+  width: 176px;
+  height: 176px;
 }
 
 
@@ -355,28 +410,13 @@ main {
 
 
 
-
-
-
-
-
-
-footer {
-  height: 20px;
-}
-
-
-
-#svg {
-  width: 30px;
-  height: 30px;
-}
 
 
 
 
 .footer {
-  width: 100%;
+  height: 20px;
+  /* width: 100%; */
   padding: 10px;
   font-size: 16px;
   color: #9C4F4A;
@@ -409,7 +449,3 @@ footer {
   align-items: center;
 } */
 
-main video {
-  width: 100%;
-  height: auto;
-}
