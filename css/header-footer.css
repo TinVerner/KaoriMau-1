@@ -40,7 +40,7 @@ nav a {
     padding-top: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .header-logo {
@@ -50,11 +50,13 @@ nav a {
     transition: color 0.3s linear;
     text-decoration: none;
     color: black;
+    margin-right: 720px;
 }
 
+
 .logo img {
-    height:30px;
-    width:40px;
+    height:100px;
+    width:100px;
 }
 
 .logo {
@@ -66,7 +68,7 @@ nav a {
 }
 
 .logo:hover {
-    color:rgb(255, 135, 70);
+    color:#fd742b;
 }
 
 
@@ -79,7 +81,7 @@ nav a {
 }
 
 .nav-item:hover {
-    color:rgb(255, 135, 70);
+    color:#fd742b;
 }
 
 .nav-left {
@@ -111,7 +113,7 @@ footer {
 }
 
 .footer a:hover {
-    color:rgb(255, 135, 70);
+    color:#fd742b;
 }
   
   
