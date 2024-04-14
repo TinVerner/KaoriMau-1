@@ -112,16 +112,76 @@ main {
 
 .modal-content {
   display: flex;
-  background-color: #fefefe;
+  background: url("modal-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   padding: 10px;
   border: 1px solid #888;
-  width: 60%;
-  height: 57%;
-  text-align: center;
+  width: 67%;
+  height: 55%;
   transform: translateY(30%);
-  border-radius: 15px;
+  border-radius: 20px;
+  color: #fff;
 }
+
+.modal-img-center {
+  display: flex;
+  align-items: center;
+}
+
+#modal-image {
+  width: 500px;
+  height: 500px;
+  margin-left: 1%;
+}
+
+
+.close {
+  color: #aaa;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: end;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.modal-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+#modal-price {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #f6695f;
+  font-weight: 700;
+}
+
+
+#modal-description {
+  line-height: 35px;
+  font-size: 20px;
+}
+
+
+
 
 
 .fade-in {
@@ -157,29 +217,6 @@ main {
 
 
 
-#modal-image {
-  width: 450px;
-  height: 450px;
-  margin-top: 4%;
-}
-
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 
 
 
@@ -206,6 +243,10 @@ main {
 
 .block-2 figcaption {
   margin-left: 7px;
+}
+
+.block-2 figcaption {
+  margin-bottom: 4px;
 }
 
 .menu-pizzas-text {
