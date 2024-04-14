@@ -4,6 +4,7 @@
     <title>Kaori Mau</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,110 +53,118 @@
             <div class="block block-2">
                 
 
-                <!-- <div id="modal" class="modal">
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <img id="4seasons-image" src="images/4seasons.jpg" alt="Pizza Image">
-                      <h2 id="4seasons-name"></h2>
-                      <p id="4seasons-price"></p>
-                      <p id="4seasons-description"></p>
-                    </div>
-                </div> -->
-                  
-                  <!-- Изображение пиццы -->
-                <figure>
+                
+                <figure onclick="openModal('images/4seasons.jpg', 'Четыре сезона', '19 BYN', 'Ощутите баланс между ароматной ветчиной, которая сливается с золотистой, растопленной моцареллой, и свежестью шампиньонов, раскрывающих свою нежность на каждом кусочке. Все это совершенно гармонично сочетается с томатным соусом, добавляя пикантности и завершая этот кулинарный шедевр.')">
                     <img class="pizza-image" src="images/4seasons.jpg" alt="4-seasons">
                     <figcaption>Четыре сезона</figcaption>
                     <figcaption>19 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/burger.jpg', 'Бургер-пицца', '20 BYN', 'Бургер-пицца - восхитительное сочетание нежного сыра моцарелла, ароматной ветчины, острого красного лука, свежих томатов, хрустящих маринованных огурчиков, соблазнительного соуса Бургер, а также сухого чеснока и томатного соуса. Этот кулинарный шедевр поражает вкусовые рецепторы и оставляет неповторимый след на гастрономической палитре каждого гурмана.')">
                     <img class="pizza-image" src="images/burger.jpg" alt="burger">
                     <figcaption>Бургер-пицца</figcaption>
                     <figcaption>20 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/cheese-chicken.jpg', 'Сырный цыплёнок', '19 BYN', 'Истинное творение кулинарной магии, в котором сочетаются нежный цыпленок, растопленная моцарелла, обволакивающие вкусовые рецепторы сыры чеддер и пармезан, а также сырный соус, придающий пищевому шедевру непревзойденную кремовость и глубину вкуса.')">
                     <img class="pizza-image" src="images/cheese-chicken.jpg" alt="cheese-chicken">
                     <figcaption>Сырный цыплёнок</figcaption>
                     <figcaption>18 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/chicken-barbeku.jpg', 'Цыплёнок-барбекю', '22 BYN', 'Сочный цыплёнок и ароматный бекон воплощают в себе силу и вкус истинного гриля, а соус барбекю, с его богатым и карамельным оттенком, обволакивает каждый кусочек ингредиентов, создавая настоящую симфонию вкуса. Красный лук, с его огненной страстью и хрустящей текстурой, добавляет пикантности и свежести, в то время как растопленная моцарелла, сияющая своей упругостью и нежностью.')">
                     <img class="pizza-image" src="images/chicken-barbeku.jpg" alt="chicken-barbeku">
                     <figcaption>Цыплёнок-барбекю</figcaption>
                     <figcaption>22 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/chicken-runch.jpg', 'Цыплёнок-ранч', '21 BYN', 'настоящий кулинарный экстаз, где нежный цыпленок и сочная ветчина окутаны в чарующий соус Ранч, раскрывающий свою кремовую, травянистую ароматику на языке. Ароматные томаты, со своей сочностью и яркостью, добавляют в эту симфонию вкуса свежие акценты, в то время как сухой чеснок, с своими ароматными нотками и умеренной пряностью, придаёт этой пицце дополнительную глубину и насыщенность. Нежная моцарелла, растопленная на вершине, создаёт идеальное обрамление для каждого ингредиента, сливаясь в гармоничное целое, которое заставляет ваши вкусовые рецепторы танцевать от наслаждения.')">
                     <img class="pizza-image" src="images/chicken-runch.jpg" alt="chicken-runch">
                     <figcaption>Цыплёнок-ранч</figcaption>
                     <figcaption>21 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/country.jpg', 'Кантри', '18 BYN', '')">
                     <img class="pizza-image" src="images/country.jpg" alt="country">
                     <figcaption>Кантри</figcaption>
                     <figcaption>18 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/hawaii.jpg', 'Гавайская', '23 BYN', '')">
                     <img class="pizza-image" src="images/hawaii.jpg" alt="hawaii">
                     <figcaption>Гавайская</figcaption>
                     <figcaption>23 BYN</figcaption>
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/home.jpg', 'Домашняя', '19 BYN', '')">
                     <img class="pizza-image" src="images/home.jpg" alt="home">
                     <figcaption>Домашняя</figcaption>
                     <figcaption>19 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/italian.jpg', 'Итальянская', '23 BYN', '')">
                     <img class="pizza-image" src="images/italian.jpg" alt="italian">
                     <figcaption>Итальянская</figcaption>
                     <figcaption>23 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/meet.jpg', 'Мясная', '24 BYN', '')">
                     <img class="pizza-image" src="images/meet.jpg" alt="meet">
                     <figcaption>Мясная</figcaption>
                     <figcaption>24 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img class="pizza-image" src="images/meet-cheese.jpg" alt="meet-cheese">
                     <figcaption>Мясная с сыром</figcaption>
                     <figcaption>25 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img class="pizza-image" src="images/meet-cucumbers.jpg" alt="meet-cucumbers">
                     <figcaption>Мясная с огурцами</figcaption>
                     <figcaption>24 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img class="pizza-image" src="images/meet-mushrooms.jpg" alt="meet-mushrooms">
                     <figcaption>Мясная с грибами</figcaption>
                     <figcaption>24 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img class="pizza-image" src="images/pepperoni.jpg" alt="pepperoni">
                     <figcaption>Пепперони</figcaption>
                     <figcaption>22 BYN</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img class="pizza-image" src="images/zhulien.jpg" alt="zhulien">
                     <figcaption>Жульен</figcaption>
                     <figcaption>23 BYN</figcaption>
                 </figure>
 
-                  
+                <!-- <div id="modal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <img id="4seasons-image" src="" alt="">
+                      <h2 id="4seasons-name"></h2>
+                      <p id="4seasons-price"></p>
+                      <p id="4seasons-description"></p>
+                    </div>
+                </div> -->
             </div>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modal-image" src="" alt="">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-price"></p>
+                        <p id="modal-description"></p>
+                    </div>
+                  </div>
 
 
 
@@ -164,21 +173,21 @@
             <h1>Салаты</h1>
             <div class="block block-3">
                 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/green-salad.png" alt="green-salad">
                     <figcaption>Зелёный салат</figcaption>
                     <figcaption>18 BYN</figcaption>
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/vegetable_with_cheese_tofu.png" alt="vegetable-salad">
                     <figcaption>Овощной салат с сыром тофу</figcaption>
                     <figcaption>20 BYN</figcaption>
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/sashimi-salad.png" alt="sashimi-salad">
                     <figcaption>Сашими салат</figcaption>
                     <figcaption>25 BYN</figcaption>
@@ -190,21 +199,21 @@
             <h1>Десерты</h1>
             <div class="block block-4">
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/redbarhat.jpg" alt="redbarhat">
                     <figcaption>Красный бархат</figcaption>
                     <figcaption>8 BYN</figcaption>
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/cheesecake.jpg" alt="cheesecake">
                     <figcaption>Чизкейк</figcaption>
                     <figcaption>7 BYN</figcaption>
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/banana-cheesecake.jpg" alt="sashimi-salad">
                     <figcaption>Банановый чизкейк</figcaption>
                     <figcaption>10 BYN</figcaption>
@@ -213,14 +222,14 @@
 
             <h1>Напитки</h1>
             <div class="block block-5">
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/aqua_sparkled.jpg" alt="aqua_sparkled">
                     <figcaption>Вода Aqua газ.</figcaption>
                     <figcaption>1.5 BYN</figcaption>
                     <figcaption>0.5 л</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/aqua_still.jpg" alt="aqua_still">
                     <figcaption>Вода Aqua негаз.</figcaption>
                     <figcaption>1.5 BYN</figcaption>
@@ -228,7 +237,7 @@
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/black_lipton.jpg" alt="black_lipton">
                     <figcaption>Чай чёрный Lipton</figcaption>
                     <figcaption>2 BYN</figcaption>
@@ -237,7 +246,7 @@
 
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/green_lipton.jpg" alt="green_lipton">
                     <figcaption>Чай зелёный Lipton</figcaption>
                     <figcaption>2 BYN</figcaption>
@@ -245,7 +254,7 @@
                 </figure>
             
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/juice_orange.jpg" alt="sashimi-salad">
                     <figcaption>Сок Апельсиновый</figcaption>
                     <figcaption>3 BYN</figcaption>
@@ -253,14 +262,14 @@
                 </figure>
 
 
-                <figure>
+                <figure onclick="openModal('images/.jpg', '', ' BYN', '')">
                     <img src="images/juise_apple.jpg" alt="sashimi-salad">
                     <figcaption>Сок яблочный</figcaption>
                     <figcaption>3 BYN</figcaption>
                     <figcaption>1 л</figcaption>
                 </figure>
 
-                <figure>
+                <figure onclick="openModal('images/nektar_cherry.jpg', '', ' BYN', '')">
                     <img src="images/nektar_cherry.jpg" alt="sashimi-salad">
                     <figcaption>Нектар вишнёвый</figcaption>
                     <figcaption>3 BYN</figcaption>
@@ -270,8 +279,11 @@
 
         </main>
 
-        <footer class="footer">
-            <p class="footer-copyright">© 2024 Kaori Mau</p>
+        <footer>
+            <div class="footer">
+                <p>© 2024 Kaori Mau. Все права защищены.</p>
+                <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+            </div>
         </footer>
     </div>
 
