@@ -4,6 +4,8 @@
 // Получаем ссылки на элементы страницы
 const searchField = document.querySelector('.search-field');
 const searchButton = document.querySelector('.search-button');
+const headings = document.querySelectorAll('.menu-subtext'); 
+const blocks = document.querySelectorAll('.block-pizzas', 'block-salads', 'block-deserts', 'block-drinks');
 
 // Функция для обработки события нажатия на кнопку "Найти"
 function handleSearch(event) {
@@ -20,28 +22,24 @@ function handleSearch(event) {
 
   // Проходимся по каждой секции меню
   menuSections.forEach(section => {
-    const items = section.querySelectorAll('figcaption'); // Получаем все элементы секции меню
+    const items = section.querySelectorAll('figure');
 
     // Проходимся по каждому элементу и проверяем наличие полного совпадения с поисковым запросом
     items.forEach(item => {
-      const itemName = item.textContent.toLowerCase(); // Получаем текст элемента и приводим к нижнему регистру
+      const itemName = item.querySelector('figcaption').textContent.toLowerCase(); // Получаем текст элемента и приводим к нижнему регистру
 
-      // Разделяем текст элемента на отдельные слова
-      const words = itemName.split(' ');
+      if (itemName.includes(searchTerm)) {
+        item.style.display = 'block';
+        for(let i = 0; i < headings.length; i++) {
+          headings[i].style.display = 'none';
+          // blocks[i].style.padding = '0 px';
+        }
 
-      // Проверяем, чтобы хотя бы одно слово полностью совпадало с поисковым запросом
-      const found = words.some(word => word === searchTerm);
-
-      if (found) {
-        // Нашли совпадение, "телепортируемся" к найденному товару, смещая его к центру страницы
-        const itemElement = item.closest('figure');
-        const itemRect = itemElement.getBoundingClientRect();
-        const offset = itemRect.top - (window.innerHeight / 2 - itemRect.height / 2); // Вычисляем смещение
-
-        window.scrollTo({
-          top: offset,
-          behavior: 'smooth'
-        });
+        for (let i = 0; i < menuSections.length; i++) {
+          menuSections[i].style.height = '0 px';
+        }
+      } else {
+        item.style.display = 'none'; // Скрываем элемент, если совпадение не найдено
       }
     });
   });
@@ -78,7 +76,7 @@ function closeModal() {
   modal.classList.add("fade-out");
 
   setTimeout(function() {
-    modal.style.display = "none"; // Скрываем модальное окно после завершения плавного закрытия
-    modal.classList.remove("fade-out"); // Удаляем класс плавного закрытия
+    modal.style.display = "none";
+    modal.classList.remove("fade-out");
   }, 500);
 }

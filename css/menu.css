@@ -385,7 +385,9 @@ figcaption {
   height: 176px;
 }
 
-
+.block-after {
+  height: 100px;
+}
 
 
 

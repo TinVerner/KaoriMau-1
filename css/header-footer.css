@@ -37,7 +37,6 @@ nav a {
 }
 
 .header-line {
-    padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +54,8 @@ nav a {
 
 
 .logo img {
-    height:40px;
-    width:30px;
+    height:70px;
+    width:70px;
 }
 
 .logo {
