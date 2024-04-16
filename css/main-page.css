@@ -69,17 +69,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .block-2 {
   width: 1024px;
   height: 629px;
@@ -89,34 +78,26 @@ main {
   flex-wrap: wrap;
 }
 
-
 .block-2 figure {
   flex: 1 1 50%;
   margin: 10px;
 }
 
-.why {
+/* Стили для информации с XML */
+
+#article h1 {
+  text-align: center;
   font-weight: bold;
   font-size: 36px;
 }
 
-.answer {
-  margin-top: 15px;
+#article p {
+  margin-top: 18px;
   font-size: 16px;
+  color: green;
 }
 
-.answer-green {
-  color: #009246;
-}
-
-.answer-white {
-  color: #a3a3a3;
-}
-
-.answer-red {
-  color: #CE2B37;
-}
-
+/* --------------------------- */
 
 
 .two-images {
@@ -149,11 +130,12 @@ figure:nth-child(2) {
 
 
 
+
+
 .block-3 {
   width: 1024px;
   height: 800px;
 }
-
 
 .popular-pizzas {
   font-size:36px;
@@ -191,23 +173,9 @@ figure:nth-child(2) {
 
 
 
-/* 
 
 
-.footer {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  color: #9C4F4A;
-}
-
-.footer-copyright {
-  margin-top: 5px;
-} */
-
-
-
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
       flex-direction: column;
   }  
@@ -220,6 +188,6 @@ figure:nth-child(2) {
   figure {
       width: 100%;
   }
-} */
+}
 
 
