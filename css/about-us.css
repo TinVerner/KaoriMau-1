@@ -5,10 +5,6 @@ main {
     align-items: center;
 }
 
-
-
-
-
 .block-1 {
     padding: 40px;
     font-size: 25px;
@@ -33,120 +29,13 @@ main {
     font-size: 16px;
 }
 
-
 .main-img-about-us img {
     height: 500px;
     width: 1024px;
     border-radius: 12px;
 }
 
-
-
 .about-us-info {
     display: flex;
     flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-.our-information {
-    padding-top:50px;
-}
-
-
-.our-information img {
-    border-radius: 12px;
-    height: 225px;
-    width: 400px;
-}
-
-
-
-
-
-.our-roots {
-    display: flex;
-}
-
-
-.our-roots-text {
-    margin-left: 20px;
-    line-height: 25px;
-}
-
-
-.our-roots-text-1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-top:10px;
-}
-
-.our-roots-text-2 {
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-.our-values {
-    display: flex;
-    margin-top: 40px;
-}
-
-
-.our-values-text {
-    margin-left: 20px;
-    line-height: 25px;
-}
-
-
-.our-values-text-1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-top:10px;
-}
-
-.our-values-text-2 {
-    font-size: 18px;
-}
-
-
-
-
-
-.our-future {
-    display: flex;
-    margin-top: 40px;
-}
-
-
-.our-future-text {
-    margin-left: 20px;
-    line-height: 25px;
-}
-
-
-.our-future-text-1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-top:10px;
-}
-
-.our-future-text-2 {
-    font-size: 18px;
-}
-
-
-
-

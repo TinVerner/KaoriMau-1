@@ -1,0 +1,29 @@
+.our-information img {
+  border-radius: 12px;
+  height: 225px;
+  width: 400px;
+}
+.our-information .our-roots,
+.our-information .our-values,
+.our-information .our-future {
+  display: flex;
+  margin-top: 40px;
+}
+.our-information .our-roots-text,
+.our-information .our-values-text,
+.our-information .our-future-text {
+  margin-left: 20px;
+  line-height: 25px;
+}
+.our-information .our-roots-text-1,
+.our-information .our-values-text-1,
+.our-information .our-future-text-1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.our-information .our-roots-text-2,
+.our-information .our-values-text-2,
+.our-information .our-future-text-2 {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */

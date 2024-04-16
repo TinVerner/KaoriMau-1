@@ -1,0 +1,32 @@
+// Стили для блока из about_us
+
+.our-information {
+
+    img {
+        border-radius: 12px;
+        height: 225px;
+        width: 400px;
+    }
+
+    .our-roots,
+    .our-values,
+    .our-future {
+        display: flex;
+        margin-top: 40px;
+
+        &-text {
+            margin-left: 20px;
+            line-height: 25px;
+
+            &-1 {
+                font-size: 36px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            &-2 {
+                font-size: 18px;
+            }
+        }
+    }
+}
