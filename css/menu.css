@@ -116,7 +116,7 @@ main {
 
 .modal-content {
   display: flex;
-  background: url("images/modal-bg.jpg");
+  background: url("modal-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;

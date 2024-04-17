@@ -13,10 +13,12 @@ main {
 }
 
 .block-1 {
+  display: flex;
+  flex-direction: column;
   background-image: url("pizza-main-1.jpg");
   margin-top: 30px;
-  height: 480px;
-  width: 1024px;
+  height: 60vh;
+  width: 65%;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
@@ -31,20 +33,17 @@ main {
   font-size: 50px;
 }
 
-
 .subheading {
   text-align: center;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 16px;
   margin-top: 15px;
   text-decoration: none;
 }
 
-
 .mbc {
   text-align: center;
 }
-
 
 .red-button {
   justify-content: center;
@@ -57,21 +56,15 @@ main {
   border-radius: 12px;
   padding: 14px 22px;
   margin-top: 44px;
-  transition: color 1s linear;
-  transition: background-color 0.3s linear;
+  transition: color 1s linear, background-color 0.3s linear;
 }
 
 .red-button:hover {
-  background-color:rgb(255, 135, 70);
+  background-color: rgb(255, 135, 70);
 }
 
-
-
-
-
 .block-2 {
-  width: 1024px;
-  height: 629px;
+  width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,11 +72,12 @@ main {
 }
 
 .block-2 figure {
-  flex: 1 1 50%;
+  flex: 1 1 100%;
   margin: 10px;
 }
 
-/* Стили для информации с XML */
+
+/* Стили для информации с XML (Почему стоит выбрать Kaori Mau?) */
 
 #article h1 {
   text-align: center;
@@ -97,18 +91,59 @@ main {
   color: green;
 }
 
-/* --------------------------- */
-
+/* -------------------------------- */
 
 .two-images {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .two-images img {
-  width: 458px;
-  height: 341px;
+  width: 70%;
+  height: 70%;
   border-radius: 12px;
 }
+
+.two-images figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+@media (max-width: 768px) {
+  .two-images {
+      flex-wrap: wrap;
+  }
+
+  .block-1, .block-2, .block-3 {
+      width: 88%;
+  }
+
+  .block-3 figure {
+      display: flex;
+      justify-content: center;
+  }
+
+  .block-3
+
+  .block-3 figure figcaption {
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .centered-heading {
+      margin-top: 20%;
+  }
+
+  .block-1 {
+      width: 80%;
+  }
+}
+
 
 .figcaption-block-2 p {
   margin: 0px;
@@ -127,18 +162,13 @@ figure:nth-child(2) {
   font-size: 16px;
 }
 
-
-
-
-
-
 .block-3 {
-  width: 1024px;
-  height: 800px;
+  width: 65%;
+  height: auto;
 }
 
 .popular-pizzas {
-  font-size:36px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -146,7 +176,7 @@ figure:nth-child(2) {
 .btf {
   font-size: 36px;
   font-weight: bold;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .bts {
@@ -154,40 +184,15 @@ figure:nth-child(2) {
   margin-top: 30px;
 }
 
-
 .block-3 img {
-  width: 366px;
-  height: 366px;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
 }
 
-.pp1 {
-  margin-top: 20px;
-  display: flex;
-}
-
+.pp1,
 .pp2 {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
-
-
-
-
-
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-  }  
-  .cell {
-      width: 100%;
-  }
-}
-
-@media (max-width: 1280px) {
-  figure {
-      width: 100%;
-  }
-}
-
-

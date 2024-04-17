@@ -1,0 +1,358 @@
+body {
+    background-color: #FCF7F7;
+    font-family: "Epilogue", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+
+header {
+    background-color: #FCF7F7;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    height: 65px;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s linear;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+
+.logo img {
+    height: 70px;
+    width: 70px;
+}
+
+
+.nav {
+    margin-left: 50%;
+}
+
+.nav-item {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    margin-right: 10px;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: #fd742b;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    margin-right: 10px;
+    transition: color 0.3s linear;
+}
+
+.nav ul li a:hover {
+    color: #fd742b;
+}
+
+
+
+main {
+    background-color: #FCF7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.block {
+    padding: 40px;
+    font-size: 25px;
+    width: fit-content;
+}
+  
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("pizza-main-1.jpg");
+    margin-top: 30px;
+    height: 60vh;
+    width: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.centered-heading {
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    font-size: 50px;
+}
+  
+.subheading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+  
+.mbc {
+    text-align: center;
+}
+  
+.red-button {
+    justify-content: center;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    align-items: center;
+    background-color: red;
+    color: #fff;
+    border-radius: 12px;
+    padding: 14px 22px;
+    margin-top: 44px;
+    transition: color 1s linear, background-color 0.3s linear;
+}
+  
+.red-button:hover {
+    background-color: rgb(255, 135, 70);
+}
+  
+.block-2 {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.block-2 figure {
+    flex: 1 1 100%;
+    margin: 10px;
+}
+  
+#article h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+  
+#article p {
+    margin-top: 18px;
+    font-size: 16px;
+    color: green;
+}
+  
+.two-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.two-images img {
+    width: 70%;
+    height: 70%;
+    border-radius: 12px;
+}
+
+.two-images figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (max-width: 768px) {
+    .two-images {
+        flex-wrap: wrap;
+    }
+
+    .block-1, .block-2, .block-3 {
+        width: 88%;
+    }
+
+    .block-3 figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .block-3
+
+    .block-3 figure figcaption {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    /* nav ul li a {
+        margin-left: 100px;
+        color: white;
+    }
+
+    .header-logo {
+        margin-left: 400px;
+    } */
+
+    .centered-heading {
+        margin-top: 20%;
+    }
+
+    .block-1 {
+        width: 80%;
+    }
+}
+
+
+.figcaption-block-2 p {
+    margin: 0px;
+}
+  
+figure:first-child {
+    font-size: 18px;
+}
+  
+figure:nth-child(2) {
+    font-size: 18px;
+}
+  
+.figsecond {
+    color: #9C4F4A;
+    font-size: 16px;
+}
+  
+.block-3 {
+    width: 65%;
+    height: auto;
+}
+  
+.popular-pizzas {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.btf {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+.bts {
+    font-size: 18px;
+    margin-top: 30px;
+}
+  
+.block-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+  
+.pp1,
+.pp2 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  
+
+footer {
+    background-color: #FCF7F7;
+    padding: 20px 0;
+    border-top: 2px solid rgb(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    /* flex: 1; */
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.footer-section p, .footer-section a, .footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s linear;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s linear;
+}
+
+.footer-section a:hover {
+    color:#fd742b;
+}
+
+.footer-bottom a:hover {
+    color:#fd742b;
+}
