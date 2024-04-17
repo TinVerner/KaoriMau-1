@@ -132,6 +132,11 @@ main {
       align-items: center;
       justify-content: center;
   }
+
+  .pp1,
+  .pp2 {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 425px) {
@@ -185,8 +190,8 @@ figure:nth-child(2) {
 }
 
 .block-3 img {
-  width: 100%;
-  height: auto;
+  width: 40vh;
+  height: 40vh;
   border-radius: 12px;
 }
 
@@ -194,5 +199,4 @@ figure:nth-child(2) {
 .pp2 {
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
 }
