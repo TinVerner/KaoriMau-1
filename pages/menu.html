@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="icon" type="image/png" href="../images/KaoriMau-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>"Kaori Mau" - Crave the Taste</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <a href="../index.html" class="logo"><img src="../images/KaoriMau-logo.svg" alt=""></a>
+                </div>
+
+                <div class="nav">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href ="../index.html">Главная</a></li>
+                            <li><a href ="menu.html">Меню</a></li>
+                            <li><a href ="about-us.html">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="block block-1">
+                <h1 class="block-1-menu">Меню</h1>
+                <p class="block-1-submenu">Лучшие и самые настоящие неаполитанские пиццы, приготовленные из ингредиентов 
+                    высочайшего качества и выпеченные в дровяной печи. Наше тесто каждый день 
+                    готовится с нуля, и мы используем только лучшие итальянские помидоры и моцареллу.
+                </p>
+
+                <div class="search-block">
+                    <div class="search-ico"><img src="../images/search-ico.jpg"></div>
+                    <input type="text" class="search-field" placeholder="Поиск" />
+                    <button class="search-button">Найти</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="container">
+            <h1 class="menu-subtext">Пиццы</h1>
+            <div class="block block-pizzas">
+                <figure onclick="openModal('../images/4seasons.jpg', 'Четыре сезона', '19 BYN', 'Ощутите баланс между ароматной ветчиной, которая сливается с золотистой, растопленной моцареллой, и свежестью шампиньонов, раскрывающих свою нежность на каждом кусочке. Все это совершенно гармонично сочетается с томатным соусом, добавляя пикантности и завершая этот кулинарный шедевр.')">
+                    <img class="pizza-image" src="../images/4seasons.jpg" alt="4-seasons">
+                    <figcaption>Четыре сезона</figcaption>
+                    <figcaption>19 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/burger.jpg', 'Бургер-пицца', '20 BYN', 'Бургер-пицца - восхитительное сочетание нежного сыра моцарелла, ароматной ветчины, острого красного лука, свежих томатов, хрустящих маринованных огурчиков, соблазнительного соуса Бургер, а также сухого чеснока и томатного соуса.')">
+                    <img class="pizza-image" src="../images/burger.jpg" alt="burger">
+                    <figcaption>Бургер-пицца</figcaption>
+                    <figcaption>20 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/cheese-chicken.jpg', 'Сырный цыплёнок', '19 BYN', 'Истинное творение кулинарной магии, в котором сочетаются нежный цыпленок, растопленная моцарелла, обволакивающие вкусовые рецепторы сыры чеддер и пармезан, а также сырный соус, придающий пищевому шедевру непревзойденную кремовость и глубину вкуса.')">
+                    <img class="pizza-image" src="../images/cheese-chicken.jpg" alt="cheese-chicken">
+                    <figcaption>Сырный цыплёнок</figcaption>
+                    <figcaption>18 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/chicken-barbeku.jpg', 'Цыплёнок-барбекю', '22 BYN', 'Сочный цыплёнок и ароматный бекон воплощают в себе силу и вкус истинного гриля, а соус барбекю, с его богатым и карамельным оттенком, обволакивает каждый кусочек ингредиентов, создавая настоящую симфонию вкуса. Красный лук, с его огненной страстью и хрустящей текстурой, добавляет пикантности и свежести, в то время как растопленная моцарелла, сияющая своей упругостью и нежностью.')">
+                    <img class="pizza-image" src="../images/chicken-barbeku.jpg" alt="chicken-barbeku">
+                    <figcaption>Цыплёнок-барбекю</figcaption>
+                    <figcaption>22 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/chicken-runch.jpg', 'Цыплёнок-ранч', '21 BYN', 'Настоящий кулинарный экстаз, где нежный цыпленок и сочная ветчина окутаны в чарующий соус Ранч, раскрывающий свою кремовую, травянистую ароматику на языке. Ароматные томаты, со своей сочностью и яркостью, добавляют в эту симфонию вкуса свежие акценты, в то время как сухой чеснок, с своими ароматными нотками и умеренной пряностью, придаёт этой пицце дополнительную глубину и насыщенность.')">
+                    <img class="pizza-image" src="../images/chicken-runch.jpg" alt="chicken-runch">
+                    <figcaption>Цыплёнок-ранч</figcaption>
+                    <figcaption>21 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/country.jpg', 'Деревенская', '18 BYN', 'Нежные кусочки цыпленка, ароматные картофельные ломтики, маринованные огурчики и сладкий красный лук создают идеальное сочетание, приправленное щепоткой сушеного чеснока. А для завершения этого кулинарного шедевра мы добавляем наш фирменный томатный соус, щедро посыпаем его моцареллой и украшаем соусом ранч.')">
+                    <img class="pizza-image" src="../images/country.jpg" alt="country">
+                    <figcaption>Деревенская</figcaption>
+                    <figcaption>18 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/hawaii.jpg', 'Гавайская', '23 BYN', 'Удвоенная порция нежного цыпленка, сочные кусочки ананасов, обволакиваемые растопленной моцареллой и окутанные нежным соусом альфредо. Это истинное слияние вкусов, где сочность, ароматы и нежность сочетаются в каждом вкусном кусочке. Позвольте себе насладиться этим великолепием вкусов и окунуться в кулинарный рай!')">
+                    <img class="pizza-image" src="../images/hawaii.jpg" alt="hawaii">
+                    <figcaption>Гавайская</figcaption>
+                    <figcaption>23 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/home.jpg', 'Домашняя', '19 BYN', 'Насыщенная пепперони, ветчина, маринованные огурчики, свежие томаты, плавящаяся моцарелла и томатный соус создают идеальное сочетание пикантности, аромата и сочности. Каждый укус - это праздник для ваших вкусовых рецепторов, приносящий настоящее удовольствие и наслаждение.')">
+                    <img class="pizza-image" src="../images/home.jpg" alt="home">
+                    <figcaption>Домашняя</figcaption>
+                    <figcaption>19 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/italian.jpg', 'Итальянская', '23 BYN', 'Сочный томатный соус, пикантная пепперони, ароматные маслины и свежие шампиньоны танцуют на тонком корже, увенчанном растопленной моцареллой и щедрыми итальянскими травами.')">
+                    <img class="pizza-image" src="../images/italian.jpg" alt="italian">
+                    <figcaption>Итальянская</figcaption>
+                    <figcaption>23 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/meet.jpg', 'Мясная', '24 BYN', 'В каждом кусочке вы ощутите обжигающие нотки цыпленка, соблазнительную ветчину, пикантную пепперони и острые колбаски чоризо, объединенные плавящейся моцареллой и пряным томатным соусом.')">
+                    <img class="pizza-image" src="../images/meet.jpg" alt="meet">
+                    <figcaption>Мясная</figcaption>
+                    <figcaption>24 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/meet-cheese.jpg', 'Ветчина и сыр', '25 BYN', 'Сочетание нежной ветчины, плавящейся моцареллы и богатого соуса альфредо создает гастрономическую гармонию, которая покорит ваше сердце.')">
+                    <img class="pizza-image" src="../images/meet-cheese.jpg" alt="meet-cheese">
+                    <figcaption>Ветчина и сыр</figcaption>
+                    <figcaption>23 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/meet-cucumbers.jpg', 'Ветчина и огурчики', '24 BYN', 'Насыщенный соус ранч, слои аппетитной моцареллы, обжигающая ветчина, ароматные маринованные огурчики и нежные кольца красного лука создают симфонию вкуса, которая захватывает ваше воображение.')">
+                    <img class="pizza-image" src="../images/meet-cucumbers.jpg" alt="meet-cucumbers">
+                    <figcaption>Ветчина и огурчики</figcaption>
+                    <figcaption>22 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/meet-mushrooms.jpg', 'Ветчина и грибы', '23 BYN', 'Шедрая порция ветчины, обильное покрытие моцареллой, ароматные шампиньоны и щедрый томатный соус создают идеальное сочетание, которое пробуждает все ваши чувства.')">
+                    <img class="pizza-image" src="../images/meet-mushrooms.jpg" alt="meet-mushrooms">
+                    <figcaption>Ветчина и грибы</figcaption>
+                    <figcaption>23 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/pepperoni.jpg', 'Пепперони', '22 BYN', 'Окутана пикантной пепперони, щедро украшена обильным слоем моцареллы и сияет благодаря томатному соусу.')">
+                    <img class="pizza-image" src="../images/pepperoni.jpg" alt="pepperoni">
+                    <figcaption>Пепперони</figcaption>
+                    <figcaption>22 BYN</figcaption>
+                </figure>
+                <figure onclick="openModal('../images/zhulien.jpg', 'Жюльен', '23 BYN', 'Нежные кусочки цыпленка, ароматные шампиньоны, соблазнительный грибной соус, сочные кольца красного лука, нотки сухого чеснока, объединенные с плавящейся моцареллой и смесью сыров чеддер и пармезан, а все это завершается фирменным соусом альфредо.')">
+                    <img class="pizza-image" src="../images/zhulien.jpg" alt="zhulien">
+                    <figcaption>Жюльен</figcaption>
+                    <figcaption>23 BYN</figcaption>
+                </figure>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-img-center">
+                    <img id="modal-image" src="" alt="">
+                    </div>
+                    <div class="modal-text">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-price"></p>
+                        <p id="modal-description"></p>
+                    </div>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                </div>
+            </div>
+
+            <h1 class="menu-subtext">Салаты</h1>
+            <div class="block block-salads">
+                
+                <figure onclick="openModal('../images/green-salad.png', 'Зелёный салат', '18 BYN', 'Микс салата, нежное авокадо, освежающий огурец, питательные бобы адамаме, хрустящий редис и дайкон, украшенные тонкой кунжутной заправкой, создают идеальное сочетание свежести и текстур.')">
+                    <img src="../images/green-salad.png" alt="green-salad">
+                    <figcaption>Зелёный салат</figcaption>
+                    <figcaption>18 BYN</figcaption>
+                </figure>
+
+
+                <figure onclick="openModal('../images/vegetable_with_cheese_tofu.png', 'Овощной салат с сыром тофу', '20 BYN', 'Насыщенный сыр тофу, свежий микс салата, освежающий огурец и сочные томаты черри в сочетании с хрустящим редисом, морковью и такуаном, украшенные ароматными орехами кешью и небольшим огненным прикосновением перца чили, завершаются нежным кунжутным соусом.')">
+                    <img src="../images/vegetable_with_cheese_tofu.png" alt="vegetable-salad">
+                    <figcaption>Овощной салат с сыром тофу</figcaption>
+                    <figcaption>20 BYN</figcaption>
+                </figure>
+
+
+                <figure onclick="openModal('../images/sashimi-salad.png', 'Сашими салат', '25 BYN', 'Восхитительный лосось и нежные креветки, сочетающиеся с миксом салата, освежающим огурцом, морковью, дайконом, хрустящим редисом и сочными томатами черри, украшенные японской заправкой и аппетитным кранчем.')">
+                    <img src="../images/sashimi-salad.png" alt="sashimi-salad">
+                    <figcaption>Сашими салат</figcaption>
+                    <figcaption>25 BYN</figcaption>
+                </figure>
+            </div>
+
+
+            <h1 class="menu-subtext">Десерты</h1>
+            <div class="block block-deserts">
+
+                <figure onclick="openModal('../images/redbarhat.jpg', 'Красный бархат', '8 BYN', 'Красные бархатные коржи, пропитанные нежным творожным кремом, раскрываются сочными ванильно-шоколадными оттенками, оставляя молочные нотки сладкого послевкусия на вашем языке.')">
+                    <img src="../images/redbarhat.jpg" alt="redbarhat">
+                    <figcaption>Красный бархат</figcaption>
+                    <figcaption>8 BYN</figcaption>
+                </figure>
+
+
+                <figure onclick="openModal('../images/cheesecake.jpg', 'Чизкейк', '7 BYN', 'Сливочно-творожная начинка с ванильной ноткой, всё лежит на тонкой песочно-миндальной подложке, добавляющей неповторимую текстуру и аромат. Этот чизкейк - воплощение истинного десертного искусства, которое доставит вам истинное наслаждение и оставит в вас приятное воспоминание о его превосходстве.')">
+                    <img src="../images/cheesecake.jpg" alt="cheesecake">
+                    <figcaption>Чизкейк</figcaption>
+                    <figcaption>7 BYN</figcaption>
+                </figure>
+
+
+                <figure onclick="openModal('../images/banana-cheesecake.jpg', 'Банановый чизкейк', '7 BYN', 'Сливочно-творожная начинка с ванильной ноткой, а особенностью этого десерта является легкий и тающий творожный слой с насыщенным вкусом банана. Все это лежит на тонкой песочно-миндальной подложке, создавая идеальное сочетание текстур и ароматов.')">
+                    <img src="../images/banana-cheesecake.jpg" alt="sashimi-salad">
+                    <figcaption>Банановый чизкейк</figcaption>
+                    <figcaption>7 BYN</figcaption>
+                </figure>
+            </div>
+
+            <h1 class="menu-subtext">Напитки</h1>
+            <div class="block block-drinks">
+                <figure onclick="openModal('../images/aqua_sparkled.jpg', 'Вода Aqua газ. 0.5 л', '1.5 BYN', 'Газированная вода с удивительно мягким вкусом, рекомендована для ежедневного употребления как дома, так и в офисе.')">
+                    <img src="../images/aqua_sparkled.jpg" alt="aqua_sparkled">
+                    <figcaption>Вода Aqua газ.</figcaption>
+                    <figcaption>1.5 BYN</figcaption>
+                    <figcaption>0.5 л</figcaption>
+                </figure>
+
+                <figure onclick="openModal('../images/aqua_still.jpg', 'Вода Aqua негаз. 0.5 л', '1.5 BYN', 'Негазированная вода с удивительно мягким вкусом, рекомендована для ежедневного употребления как дома, так и в офисе.')">
+                    <img src="../images/aqua_still.jpg" alt="aqua_still">
+                    <figcaption>Вода Aqua негаз.</figcaption>
+                    <figcaption>1.5 BYN</figcaption>
+                    <figcaption>0.5 л</figcaption>
+                </figure>
+
+
+                <figure onclick="openModal('../images/black_lipton.jpg', 'Чай чёрный Lipton 0.5 л', '2 BYN', 'Имеет приятный и освежающий вкус, который идеально подойдет для тех, кто предпочитает чай с лимоном. Это идеальный выбор для тех, кто ищет напиток, который поможет освежиться и оживиться в течение дня.')">
+                    <img src="../images/black_lipton.jpg" alt="black_lipton">
+                    <figcaption>Чай чёрный Lipton</figcaption>
+                    <figcaption>2 BYN</figcaption>
+                    <figcaption>0.5 л</figcaption>
+                </figure>
+
+
+
+                <figure onclick="openModal('../images/green_lipton.jpg', 'Чай зелёный Lipton 0.5 л', '2 BYN', 'Зеленый чай Lipton утоляет жажду, улучшает настроение и освежает. Подходит для прогулок по парку в жаркий день, дружеских посиделок и незапланированных семейных праздников. Вкус чайного напитка отличается от традиционного зеленого чая. Производитель добавляет фруктозу, лимонную и аскорбиновую кислоту. Последние два компонента сохраняют полезные свойства напитка и улучшают обменные процессы в организме.')">
+                    <img src="../images/green_lipton.jpg" alt="green_lipton">
+                    <figcaption>Чай зелёный Lipton</figcaption>
+                    <figcaption>2 BYN</figcaption>
+                    <figcaption>0.5 л</figcaption>
+                </figure>
+            
+
+                <figure onclick="openModal('../images/juice_orange.jpg', 'Сок Апельсиновый 1 л', '4 BYN', '100% натуральный восстановленный сок, приготовленный без добавления консервантов, красителей и подсластителей. У него чистый апельсиновый вкус, с характерной кислинкой и оптимальным количеством мякоти.')">
+                    <img src="../images/juice_orange.jpg" alt="juice_orange">
+                    <figcaption>Сок Апельсиновый</figcaption>
+                    <figcaption>4 BYN</figcaption>
+                    <figcaption>1 л</figcaption>
+                </figure>
+
+
+                <figure onclick="openModal('../images/juise_apple.jpg', 'Сок яблочный 1 л', '4 BYN', '100% яблочный сок. Напиток изготовлен из свежевыжатого яблочного сока и нежного яблочного пюре. В коктейле содержится большое количество витаминов, минералов, пектина и органических кислот.')">
+                    <img src="../images/juise_apple.jpg" alt="juise_apple">
+                    <figcaption>Сок яблочный</figcaption>
+                    <figcaption>4 BYN</figcaption>
+                    <figcaption>1 л</figcaption>
+                </figure>
+
+                <figure onclick="openModal('../images/nektar_cherry.jpg', 'Нектар вишнёвый 1 л', '4 BYN', 'Осветлённый напиток со вкусом вишни, который идеально подходит для детского питания. Он содержит только натуральный сок, сахар и лимонную кислоту, что делает его не только вкусным, но и полезным для здоровья. ')">
+                    <img src="../images/nektar_cherry.jpg" alt="nektar_cherry">
+                    <figcaption>Нектар вишнёвый</figcaption>
+                    <figcaption>4 BYN</figcaption>
+                    <figcaption>1 л</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+              <h3>Компания</h3>
+              <p>Адрес: ул. Кирова 1, Минск, Беларусь</p>
+              <p>Телефон: +8-800-555-35-35</p>
+              <p>Email: KaoriMau@gmail.com</p>
+            </div>
+            <div class="footer-section">
+              <h3>Ссылки</h3>
+              <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>          
+                <li><a href="about-us.html">О нас</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Социальные сети</h3>
+              <ul>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+      
+          </div>
+          <div class="footer-bottom">
+            <p>© 2024 Kaori Mau. Все права защищены.</p>
+            <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+          </div>
+    </footer>
+    <script type="text/javascript" src='../scripts/menu.js'>
+    </script>
+</body>
+</html>

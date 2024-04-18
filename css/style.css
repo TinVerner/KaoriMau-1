@@ -1,3 +1,7 @@
+.our-information {
+  display: flex;
+  flex-direction: column;
+}
 .our-information img {
   border-radius: 12px;
   height: 225px;
@@ -20,10 +24,19 @@
 .our-information .our-future-text-1 {
   font-size: 36px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .our-information .our-roots-text-2,
 .our-information .our-values-text-2,
 .our-information .our-future-text-2 {
   font-size: 18px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .our-roots,
+  .our-values,
+  .our-future {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

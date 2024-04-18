@@ -1,7 +1,7 @@
 function displayАrticle(tagName) {
   let xhr = new XMLHttpRequest();
 
-  xhr.open('GET', 'description.xml', true);
+  xhr.open('GET', '../pages/description.xml', true);
   xhr.setRequestHeader('Content-Type', 'application/xml');
   xhr.send();
 

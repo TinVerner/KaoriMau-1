@@ -15,7 +15,7 @@ main {
 .block-1 {
   display: flex;
   flex-direction: column;
-  background-image: url("pizza-main-1.jpg");
+  background-image: url("../images/pizza-main-1.jpg");
   margin-top: 30px;
   height: 60vh;
   width: 65%;
@@ -112,6 +112,17 @@ main {
 
 }
 
+
+@media (max-width: 1024px) {
+  .centered-heading {
+    margin-top: 20%;
+}
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .two-images {
       flex-wrap: wrap;
@@ -140,10 +151,6 @@ main {
 }
 
 @media (max-width: 425px) {
-  .centered-heading {
-      margin-top: 20%;
-  }
-
   .block-1 {
       width: 80%;
   }
