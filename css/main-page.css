@@ -13,23 +13,24 @@ main {
 }
 
 .block-1 {
-  display: flex;
-  flex-direction: column;
   background-image: url("../images/pizza-main-1.jpg");
-  margin-top: 30px;
-  height: 60vh;
-  width: 65%;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 345px 20px 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  /* height: 60vh;
+  width: 65%; */
   border-radius: 12px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .centered-heading {
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   color: white;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   font-size: 50px;
 }
 
@@ -112,12 +113,12 @@ main {
 
 }
 
-
+/* 
 @media (max-width: 1024px) {
   .centered-heading {
     margin-top: 20%;
 }
-}
+} */
 
 
 
