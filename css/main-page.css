@@ -1,4 +1,7 @@
-
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
 main {
   background-color: #FCF7F7;
   display: flex;
@@ -9,28 +12,29 @@ main {
 .block {
   padding: 40px;
   font-size: 25px;
-  width: fit-content;
+}
+
+.first {
+  width: 100%;
 }
 
 .block-1 {
-  background-image: url("../images/pizza-main-1.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/pizza-main.jpg");
+  margin-top: 30px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 345px 20px 20px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  /* height: 60vh;
-  width: 65%; */
   border-radius: 12px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-bottom: 150px;
 }
 
 .centered-heading {
-  /* display: flex;
   align-items: center;
-  text-align: center; */
+  text-align: center;
   color: white;
-  /* margin-top: 200px; */
+  margin-top: 200px;
   font-size: 50px;
 }
 
@@ -65,7 +69,6 @@ main {
 }
 
 .block-2 {
-  width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +104,8 @@ main {
 }
 
 .two-images img {
-  width: 70%;
-  height: 70%;
+  width: 500px;
+  height: 500px;
   border-radius: 12px;
 }
 
@@ -112,25 +115,35 @@ main {
   align-items: center;
 
 }
-
-/* 
-@media (max-width: 1024px) {
-  .centered-heading {
-    margin-top: 20%;
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .two-images img {
+    width: 430px;
+    height: 430px;
+  }
+  .two-images {
+    align-items: flex-start;
+  }
 }
-} */
 
-
-
-
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .two-images img {
+    width: 300px;
+    height: 300px;
+  }
+}
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
   .two-images {
       flex-wrap: wrap;
-  }
-
-  .block-1, .block-2, .block-3 {
-      width: 88%;
   }
 
   .block-3 figure {
@@ -138,22 +151,55 @@ main {
       justify-content: center;
   }
 
-  .block-3
-
   .block-3 figure figcaption {
       align-items: center;
       justify-content: center;
   }
-
   .pp1,
   .pp2 {
     flex-wrap: wrap;
   }
+  .two-images img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+  .two-images img {
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+  }
 }
 
 @media (max-width: 425px) {
-  .block-1 {
-      width: 80%;
+  .container {
+    max-width: 300px;
+  }
+  .block-3 figure figcaption {
+    font-size: 25px;
+  }
+  .bts {
+    font-size: 14px !important;
+  }
+  .block-3 img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .centered-heading {
+      margin-top: 20%;
+  }
+  .centered-heading {
+    font-size: 20px;
+  }
+  .two-images img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
   }
 }
 
@@ -176,7 +222,6 @@ figure:nth-child(2) {
 }
 
 .block-3 {
-  width: 65%;
   height: auto;
 }
 
@@ -198,8 +243,8 @@ figure:nth-child(2) {
 }
 
 .block-3 img {
-  width: 40vh;
-  height: 40vh;
+  width: 400px;
+  height: 400px;
   border-radius: 12px;
 }
 
