@@ -2,11 +2,6 @@ header {
     margin-bottom: 20px;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-
 /* Начало */
 .block-1 {
     background-image: url("../images/pizza-menu.jpg");
@@ -369,6 +364,9 @@ figcaption {
     .container {
         max-width: 400px;
     }
+    .container figcaption {
+        font-size: 20px;
+    }
     .block-1 {
         padding: 20px;
     }
@@ -386,15 +384,15 @@ figcaption {
         height: 400px;
     }
     .block-salads img {
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 266px;
     }
     .block-deserts img {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
     .block-drinks img {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
 }

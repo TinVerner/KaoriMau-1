@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Epilogue;
+    src: url(fonts/Epilogue.ttf);
+}
+
 .container {
     max-width: 1100px;
     margin: auto;
@@ -89,7 +94,6 @@ footer {
     padding: 0 20px;
 }
 .footer-section {
-    /* flex: 1; */
     margin-right: 20px;
 }
 .footer-section h3 {
