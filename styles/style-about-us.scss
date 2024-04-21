@@ -1,12 +1,15 @@
 // Стили для блока из about-us
+@mixin img-style {
+    border-radius: 12px;
+    height: 225px;
+    width: 400px;
+}
 
 .our-information {
     display: flex;
     flex-direction: column;
     img {
-        border-radius: 12px;
-        height: 225px;
-        width: 400px;
+        @include img-style;
     }
 
     .our-roots,

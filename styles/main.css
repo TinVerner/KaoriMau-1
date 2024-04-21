@@ -1,6 +1,6 @@
 main {
-  background-color: #FCF7F7;
   display: flex;
+  background-color: #FCF7F7;
   flex-direction: column;
   align-items: center;
 }
@@ -29,7 +29,7 @@ main {
 .centered-heading {
   align-items: center;
   text-align: center;
-  color: white;
+  color: #ffffff;
   margin-top: 200px;
   font-size: 50px;
 }
