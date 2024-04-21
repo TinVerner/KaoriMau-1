@@ -30,9 +30,7 @@ main {
 
 .main-img-about-us img {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+    height: 37vh;
     width: 100%;
     border-radius: 12px;
 }

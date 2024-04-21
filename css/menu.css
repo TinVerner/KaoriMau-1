@@ -125,8 +125,8 @@ figcaption {
     margin: 0 auto;
     padding: 10px;
     border: 2px solid #2d2d2d;
-    width: 80%;
-    height: 50%;
+    width: 70%;
+    height: 60%;
     transform: translateY(30%);
     border-radius: 20px;
     color: #fff;
@@ -204,18 +204,53 @@ figcaption {
     }
 }
 
+/* Адаптив модального окна */
 @media (max-width: 1024px) {
     .modal-content {
         flex-direction: column;
-        height: 90%;
+        height: 520px;
         align-items: center;
         justify-content: center;
-
     }
 
     .close {
-        align-items: end;
         order: -1;
+        margin-left: 95%;
+    }
+
+    #modal-image {
+        height: 220px;
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        height: 550px;
+        margin-top: -50px;
+        background: url("../images/modal-bg-column.jpg");
+}
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        height: 620px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 426px) {
+    .modal-content {
+        height: 750px;
+        margin-top: -200px;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 376px) {
+    .modal-content {
+        height: 810px;
+        margin-top: -170px;
     }
 }
  
