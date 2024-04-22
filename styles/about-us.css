@@ -30,7 +30,7 @@ main {
 
 .main-img-about-us img {
     display: flex;
-    height: 37vh;
+    height: 300px;
     width: 100%;
     border-radius: 12px;
 }

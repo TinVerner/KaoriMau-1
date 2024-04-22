@@ -415,19 +415,31 @@ figcaption {
         font-size: 13px;
     }
     .block-pizzas img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }
+    .block-pizzas figure {
+        margin: auto;
     }
     .block-salads img {
-        width: 400px;
-        height: 266px;
+        width: 300px;
+        height: 199px;
+    }
+    .block-salads figure {
+        margin: auto;
     }
     .block-deserts img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }
+    .block-deserts figure {
+        margin: auto;
     }
     .block-drinks img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }
+    .block-drinks figure {
+        margin: auto;
     }
 }

@@ -32,7 +32,6 @@ function handleSearch(event) {
         item.style.display = 'block';
         for(let i = 0; i < headings.length; i++) {
           headings[i].style.display = 'none';
-          // blocks[i].style.padding = '0 px';
         }
 
         for (let i = 0; i < menuSections.length; i++) {
