@@ -125,8 +125,8 @@ figcaption {
     margin: 0 auto;
     padding: 10px;
     border: 2px solid #2d2d2d;
-    width: 70%;
-    height: 60%;
+    width: 1100px;
+    height: 500px;
     transform: translateY(30%);
     border-radius: 20px;
     color: #fff;
@@ -205,12 +205,14 @@ figcaption {
 }
 
 /* Адаптив модального окна */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .modal-content {
         flex-direction: column;
-        height: 520px;
+        width: 900px;
+        height: 500px;
         align-items: center;
         justify-content: center;
+        padding: 30px;
     }
 
     .close {
@@ -224,9 +226,17 @@ figcaption {
     }
 }
 
+@media (max-width: 992px) {
+    .modal-content {
+        width: 700px;
+        height: 550px;
+}
+}
+
 @media (max-width: 768px) {
     .modal-content {
-        height: 550px;
+        width: 500px;
+        height: 590px;
         margin-top: -50px;
         background: url("../images/modal-bg-column.jpg");
 }
@@ -234,23 +244,18 @@ figcaption {
 
 @media (max-width: 576px) {
     .modal-content {
-        height: 620px;
-        margin-top: -100px;
+        width: 340px;
+        height: 660px;
+        margin-top: -180px;
     }
 }
 
 @media (max-width: 426px) {
     .modal-content {
-        height: 750px;
+        width: 300px;
+        height: 680px;
         margin-top: -200px;
         margin-bottom: 200px;
-    }
-}
-
-@media (max-width: 376px) {
-    .modal-content {
-        height: 810px;
-        margin-top: -170px;
     }
 }
  

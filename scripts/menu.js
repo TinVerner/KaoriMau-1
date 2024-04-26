@@ -1,32 +1,26 @@
 
 // Поиск по странице товара
-
-// Получаем ссылки на элементы страницы
 const searchField = document.querySelector('.search-field');
 const searchButton = document.querySelector('.search-button');
 const headings = document.querySelectorAll('.menu-subtext'); 
 const blocks = document.querySelectorAll('.block-pizzas', 'block-salads', 'block-deserts', 'block-drinks');
 
-// Функция для обработки события нажатия на кнопку "Найти"
 function handleSearch(event) {
-  event.preventDefault(); // Предотвращаем отправку формы (если используется форма)
+  event.preventDefault();
 
-  const searchTerm = searchField.value.toLowerCase().trim(); // Получаем введенный текст, приводим к нижнему регистру и удаляем пробелы
+  const searchTerm = searchField.value.toLowerCase().trim();
 
   if (searchTerm === '') {
-    return; // Если пользователь не ввел ничего или ввел только пробелы, выходим из функции
+    return;
   }
 
-  // Ищем секции меню
   const menuSections = document.querySelectorAll('.block-pizzas, .block-salads, .block-deserts, .block-drinks');
 
-  // Проходимся по каждой секции меню
   menuSections.forEach(section => {
     const items = section.querySelectorAll('figure');
 
-    // Проходимся по каждому элементу и проверяем наличие полного совпадения с поисковым запросом
     items.forEach(item => {
-      const itemName = item.querySelector('figcaption').textContent.toLowerCase(); // Получаем текст элемента и приводим к нижнему регистру
+      const itemName = item.querySelector('figcaption').textContent.toLowerCase();
 
       if (itemName.includes(searchTerm)) {
         item.style.display = 'block';
@@ -38,17 +32,13 @@ function handleSearch(event) {
           menuSections[i].style.height = '0 px';
         }
       } else {
-        item.style.display = 'none'; // Скрываем элемент, если совпадение не найдено
+        item.style.display = 'none';
       }
     });
   });
 }
 
-// Назначаем обработчик события нажатия на кнопку "Найти"
 searchButton.addEventListener('click', handleSearch);
-
-
-
 
 
 // Модальное окно
