@@ -136,8 +136,8 @@ figcaption {
     align-items: center;
 }
 #modal-image {
-    width: 40vh;
-    height: 40vh;
+    width: 400px;
+    height: 400px;
     margin-left: 1%;
 }
 .modal-text {
